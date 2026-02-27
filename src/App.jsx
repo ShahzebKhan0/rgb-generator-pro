@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const App = () => {
 
-    const [rgbColor, setRgbColor] = useState()
+    const [rgbColor, setRgbColor] = useState("rgb(0, 0, 0)")
 
     
     const changeColor = () => {
