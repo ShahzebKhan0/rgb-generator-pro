@@ -21,9 +21,9 @@ const App = () => {
 
   return (
     <div className='relative h-screen w-full flex items-center justify-center text-white flex-col gap-5' style={{ backgroundColor: rgbColor }}>
-     <div className='absolute  top-7 w-auto flex items-center justify-between rounded-2xl bg-black py-3 px-6'>
-       <h1 className='font-bold text-xl'>This project is own by :</h1>
-       <span className='ml-1.5 animate-bounce right-6 font-bold text-xl'>Shahzeb</span>
+     <div className='absolute  top-7 w-auto flex items-center justify-between rounded-2xl bg-black py-3 px-6 font-bold text-xl'>
+       <h1 className=''>This project is own by :</h1>
+       <span className='ml-1.5 animate-bounce right-6'>Shahzeb</span>
      </div>
 
       <button
