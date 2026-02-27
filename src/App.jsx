@@ -4,6 +4,7 @@ const App = () => {
   // 1️⃣ State to store the current background color
   // We start with a default color instead of undefined
   const [rgbColor, setRgbColor] = useState("rgb(0, 0, 0)");
+  const [alertCopied, setAlertCopied] = useState("")
 
   // 2️⃣ Function to generate a random RGB color
   const changeColor = () => {
@@ -22,8 +23,13 @@ const App = () => {
     if (!rgbColor) return;
 
     navigator.clipboard.writeText(rgbColor);
-    alert("Color copied to clipboard!");
+    setAlertCopied("Color copied to clipboard!")
+
   };
+
+  setTimeout(() => {
+    setAlertCopied("")
+  }, 4000)
 
   return (
     // 4️⃣ Main container
@@ -58,6 +64,7 @@ const App = () => {
       <p className="text-white opacity-60 select-none">
         Click the RGB value to copy it
       </p>
+      <p>{alertCopied}</p>
     </div>
   );
 };
